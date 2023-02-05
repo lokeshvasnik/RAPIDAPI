@@ -19,7 +19,7 @@ mongoose.connect(
 );
 
 // Routes
-app.get('/front-end-frameworks', async (req, res) => {
+app.get('/', async (req, res) => {
     try {
         const frontEnd = await frontEndSchema.find();
         return res.json(frontEnd);
